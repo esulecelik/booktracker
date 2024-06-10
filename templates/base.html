@@ -1,0 +1,47 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}{% endblock page_title %}</title>
+    
+    {% block import_css %}
+    
+    {% endblock import_css %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "node_modules/bootstrap/dist/css/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "base.css" %}"/>
+    <script src="{% static "node_modules/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+    
+    {% block import_script %}
+    {% endblock import_script %}
+</head>
+<body>
+    
+    <div class="container-fluid p-0 m-0 w-100 h-100">
+        <div class="row m-0 p-0 w-100 h-100">
+
+            <div class="col">
+                <div class="row p-3">
+                    <span>OKUNMAYA DEVAM EDEN KİTAPLAR</span>
+                </div>
+                <div class="row">
+                    {% block page_content %}{% endblock page_content %}
+                </div>
+            </div>
+
+            
+            {% include "shared/sidebar.html" %}
+            
+    
+        </div>
+    </div>
+
+
+    <script>
+        {% block script %}{% endblock script %}
+    </script>
+</body>
+</html>

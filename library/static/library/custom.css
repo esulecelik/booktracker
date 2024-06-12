@@ -1,0 +1,22 @@
+.dropdown-menu {
+    top: 0;
+    right: 0;
+    left: auto;
+    transform: translate(-100%, 0);
+}
+
+#dropdown-toogle {
+    --bs-btn-border-radius:0px;
+    
+}
+
+.square{
+    width: 300px;
+    height: 400px;
+}
+
+.fix-height {
+    height: 50px;
+    word-wrap: break-word;
+    
+}

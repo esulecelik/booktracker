@@ -1,2 +1,5 @@
 booktracker/__pycache__/
 db.sqlite3
+library/migrations
+library/__pycache__/
+media/covers

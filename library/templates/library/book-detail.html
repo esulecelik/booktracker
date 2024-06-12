@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% if book %}
+
+    {% block page_title %}
+        {{book.name}}
+    {% endblock page_title %}
+
+
+    {% block page_content %}
+        <p>{{book.name}}</p>
+        <p>{{book.progress}}</p>
+        
+    {% endblock page_content %}
+
+{% endif %}
